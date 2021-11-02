@@ -1,0 +1,28 @@
+server:
+  port: 9999
+spring:
+  application:
+    name: gateway-server
+  main:
+    # 允许重定bean
+    allow-bean-definition-overriding: true
+
+# 开启热更新
+gateway:
+  route:
+    refresh:
+      enabled: true
+
+env: dev
+app:
+  # apollo app id
+  id: test-gateway
+apollo:
+  meta: http://127.0.0.1:8080
+  cacheDir: /tmp/data
+
+  bootstrap:
+    namespaces: application
+    enabled: true
+    eagerLoad:
+      enabled: true
