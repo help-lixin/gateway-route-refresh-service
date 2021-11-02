@@ -52,4 +52,5 @@ gateway.route.refresh.enabled=true
 ```
 ### 4. 相关问题
 1) 支持哪些配置中心?   
-   目前仅支持:Nacos和Apollo.  
+   目前仅支持:Nacos和Apollo.
+
